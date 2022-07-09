@@ -1,0 +1,65 @@
+﻿
+
+ 
+
+<html ng-app="myApp">
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+     <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script  src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
+@*    <script  src="../js/select_cntl1.js" crossorigin="anonymous"></script>*@
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+       <script src="~/js/script.js"></script>
+@*<script src="~/js/HomeController.js"></script>*@
+    <style> 
+        body {
+background-image: url("/css/test.svg");
+background-size: cover;
+}
+</style>
+<script>
+
+    var select_cntl_obj1=new select_cntl1();
+    select_cntl_obj1.init();
+ </script>
+
+</head>
+
+<body class="text-center img-fluid">
+
+    <div ng-controller="GreetingController" class="container">
+  <div class="row" >
+    <div class="box">
+      <div class="">
+        <hr>
+        <h3 class="signup"> Please Sign up</h3>
+        <hr>
+        <div class="form-horizontal">
+            <div class="form-group centered">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <input type="text" class="form-control" name="name" placeholder="Username" ng-model="registration.Username">
+              </div>
+            </div>
+            <div class="form-group centered">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <input type="password" class="form-control" name="password" placeholder="Password" ng-model="registration.Password">
+              </div>
+            </div>
+             <div class="form-group centered">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="button" class="btn btn-lg btn-primary form-control" value="{{btntext}}" ng-click="savedata()" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

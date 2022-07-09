@@ -1,0 +1,91 @@
+﻿
+
+<!DOCTYPE html>
+
+ 
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+     <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="~/js/HomeController.js" ></script>
+
+        <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <style> 
+        body {
+background-image: url("/css/test.svg");
+background-size: cover;
+}
+</style>
+
+
+</head>
+
+<body  class="text-center img-fluid" ng-app="Homeapp">
+    <form class="row g-3">
+                <hr>
+        <h3 class="signup"> Please Sign in</h3>
+        <hr>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                    <label for="validationServer01" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="validationServer01" required>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <label for="validationServer02" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="validationServer02" required>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#!">Forgot password?</a>
+            </div>
+
+  <!-- Submit button -->
+  <div class="container">
+  <div class="row justify-content-md-center">
+      <div class="col-md-4">
+  <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+  </div>
+  </div>
+   </div>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p class="signup">Not a member? <a href="#!">Register</a></p>
+    <p class="signup">or sign up with:</p>
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-google"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+    </button>
+
+    <button type="button" class="btn btn-link btn-floating mx-1">
+      <i class="fab fa-github"></i>
+    </button>
+  </div>
+</form>
+
+    
+</body>
+
+</html>

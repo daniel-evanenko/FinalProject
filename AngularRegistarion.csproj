@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\HomeController.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\HomeController.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="angularjs" Version="1.8.2" />
+    <PackageReference Include="AngularJS.Core" Version="1.8.2" />
+    <PackageReference Include="MailKit" Version="3.2.0" />
+    <PackageReference Include="MySqlConnector" Version="2.1.8" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+</Project>

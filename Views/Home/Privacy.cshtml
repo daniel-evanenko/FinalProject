@@ -1,0 +1,14 @@
+﻿<html ng-app="myApp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+        <script src="~/js/script.js"></script>
+        <body>
+                <div ng-controller="GreetingController">
+                    {{ greeting }}
+                </div>
+                 <div ng-controller="GreetingController" class="col-lg-4 col-md-6 col-sm-6">
+                    <input type="button" class="btn btn-lg btn-primary form-control" value="{{btntext}}" ng-click="savedata()" />
+                 </div>
+        </body>
+    </head>
+</html>
